@@ -1,9 +1,11 @@
 ---
 import NavBar from "../components/NavBar.astro";
+import "../base.css";
 const { title } = Astro.props;
+const year = new Date().getFullYear();
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,10 +13,21 @@ const { title } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body>
+    <body class="font-clashdisplay font-light text-white bg-black container mx-auto flex flex-col h-screen justify-between">
         <NavBar />
-        <section class="container-main">
+        <section class="container-main mb-auto">
+            <p class=" line-clamp-2">asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. </p>
             <slot />
         </section>
+        <footer class="text-center mt-12 mb-2 flex items-center justify-between">
+            <div class="space-x-2">
+                <a href="#"><img src="/assets/icons/github.svg" class="w-8 inline" /></a>
+                <a href="#"><img src="/assets/icons/linkedin.svg" class="w-8 inline" /></a>
+            </div>
+            <div>
+                Designed & Built by Simon Meia<br />
+                {year}
+            </div>
+        </footer>
     </body>
 </html>

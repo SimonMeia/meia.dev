@@ -1,0 +1,27 @@
+---
+import ProjectPreview from "./ProjectPreview.astro";
+
+const allProjects = await Astro.glob("../pages/projects/*.md");
+const projectToShow = ["packige", "movie-elo", "sleeping-time"];
+---
+
+<div>
+    <h2 class="text-4xl mb-4">My Work</h2>
+    {
+        allProjects
+            .filter((project) => projectToShow.includes(project.frontmatter.slug))
+            .map((project) => (
+                <ProjectPreview
+                    url={project.url}
+                    title={project.frontmatter.title}
+                    description={project.frontmatter.description}
+                    technos={project.frontmatter.technos}
+                    projectType={project.frontmatter.projectType}
+                    cover={project.frontmatter.image.url}
+                />
+            ))
+    }
+    <a href="./projects" class="block w-52 mx-auto p-4 border-orange border-solid border-2 rounded text-center text-orange">
+        All the projects
+    </a>
+</div>
