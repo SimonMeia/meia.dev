@@ -3,9 +3,11 @@ import ProjectPreview from "./ProjectPreview.astro";
 
 const allProjects = await Astro.glob("../pages/projects/*.md");
 const projectToShow = ["packige", "movie-elo", "sleeping-time"];
+
+const {id} = Astro.props
 ---
 
-<div>
+<div id={id}>
     <h2 class="text-4xl mb-4">My Work</h2>
     {
         allProjects
@@ -18,10 +20,11 @@ const projectToShow = ["packige", "movie-elo", "sleeping-time"];
                     technos={project.frontmatter.technos}
                     projectType={project.frontmatter.projectType}
                     cover={project.frontmatter.image.url}
+                    projectURL={project.frontmatter.projectURL}
                 />
             ))
     }
-    <a href="./projects" class="block w-52 mx-auto p-4 border-orange border-solid border-2 rounded text-center text-orange">
+    <!-- <a href="./projects" class="block w-52 mx-auto p-4 border-orange border-solid border-2 rounded text-center text-orange">
         All the projects
-    </a>
+    </a> -->
 </div>

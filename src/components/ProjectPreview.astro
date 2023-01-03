@@ -1,18 +1,20 @@
 ---
-const { url, title, technos, projectType, description, cover } = Astro.props;
+const { url, title, technos, projectType, description, cover, projectURL } = Astro.props;
 ---
 
 <div class="flex mb-12 justify-between h-56">
     <div class="w-5/12 flex flex-col justify-between">
-        <span class="text-grey text-xs">{projectType}</span>
-        <h3 class="text-2xl text-orange">{title}</h3>
-        <div class="space-x-4">
-            {technos.map((techno) => <span class="text-grey text-xs">{techno}</span>)}
+        <div>
+            <span class="text-grey text-xs">{projectType}</span>
+            <h3 class="text-2xl text-orange">{title}</h3>
+            <div class="space-x-4">
+                {technos.map((techno) => <span class="text-grey text-xs">{techno}</span>)}
+            </div>
         </div>
         <p class="line-clamp-3">
             {description}
         </p>
-        <a href={url} class="w-fit px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2">
+        <a href={projectURL} target="_blank" class="w-fit px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2">
             Learn more
         </a>
     </div>

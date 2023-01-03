@@ -4,10 +4,12 @@ slug: "packige"
 title: "Packige"
 projectType: "PWA"
 technos: ["Vue.js", "Laravel", "MySQL"]
-description: "Lorem ipsum dolor sit amet consectetur. Ut odio orci enim sed. Aliquet vulputate adipiscing proin curabitur pulvinar ac a scelerisque. Odio lobortis."
+description: "Packige is a school group project. It is a PWA that allows students in the school to view their schedules, manage their grades as well as keep a class journal shared with other class members."
 image:
     url: '/assets/img/packige-cover.png'     
     alt: 'Packige project mockup.'
+projectURL: 'https://fromneibaf-pingouin.heig-vd.ch/'
+
 draft: false
 ---
 

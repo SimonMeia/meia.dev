@@ -13,20 +13,22 @@ const year = new Date().getFullYear();
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body class="font-clashdisplay font-light text-white bg-black container mx-auto flex flex-col h-screen justify-between">
+    <body
+        class="font-clashdisplay font-light text-white bg-black container mx-auto flex flex-col h-screen justify-between"
+    >
         <NavBar />
         <section class="container-main mb-auto">
-            <p class=" line-clamp-2">asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. asdfasafsdfasf. </p>
             <slot />
         </section>
-        <footer class="text-center mt-12 mb-2 flex items-center justify-between">
+        <footer class="mt-12 mb-2 flex items-center justify-between">
             <div class="space-x-2">
-                <a href="#"><img src="/assets/icons/github.svg" class="w-8 inline" /></a>
-                <a href="#"><img src="/assets/icons/linkedin.svg" class="w-8 inline" /></a>
+                <a href="https://github.com/SimonMeia"><img src="/assets/icons/github.svg" class="w-8 inline" /></a>
+                <a href="https://www.linkedin.com/in/simon-meia/"
+                    ><img src="/assets/icons/linkedin.svg" class="w-8 inline" />
+                </a>
             </div>
             <div>
-                Designed & Built by Simon Meia<br />
-                {year}
+                Designed & Built by Simon Meia in {year}
             </div>
         </footer>
     </body>

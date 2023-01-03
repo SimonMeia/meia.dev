@@ -1,0 +1,32 @@
+---
+import ProjectPreview from "./ProjectPreview.astro";
+import WhoAmIText from "./WhoAmIText.astro";
+
+const allProjects = await Astro.glob("../pages/projects/*.md");
+const projectToShow = ["packige", "movie-elo", "sleeping-time"];
+
+const { id } = Astro.props;
+---
+
+<div id={id}>
+    <h2 class="text-4xl mb-4">Who am I ?</h2>
+    <div class="flex flex-row justify-between items-center">
+        <div class="w-1/4">
+            <img src="./assets/img/photo-simon-big.jpg" alt="Picture of Simon Meia" class="object-contain rounded" />
+        </div>
+        <div class="w-2/3 flex flex-col justify-evenly space-y-6">
+            <WhoAmIText
+                title="About Me"
+                text="My name is and I am a 22 years old media engineer specialized in web development. I live in Switzerland and I'm passionate about movies, video games and the LOTR universe."
+            />
+            <WhoAmIText
+                title="My Journey"
+                text="After a first degree in computer science I decided to slightly reorient myself towards the web. So I did a bachelor in media engineering at the HEIG-VD, specializing in web development."
+            />
+            <WhoAmIText
+                title="My Tools"
+                text="Passionate and proactive, I like to learn new technologies to complete projects. Currently, my sharpest tools are : Vue.js, Tailwind CSS and Express.js."
+            />
+        </div>
+    </div>
+</div>

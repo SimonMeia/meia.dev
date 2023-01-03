@@ -4,10 +4,11 @@ title: "MovieElo"
 slug: "movie-elo"
 projectType: "Website"
 technos: ["Vue.js", "Express.js", "API"]
-description: "Lorem ipsum dolor sit amet consectetur. Ut odio orci enim sed. Aliquet vulputate adipiscing proin curabitur pulvinar ac a scelerisque. Odio lobortis."
+description: "MovieElo is a website that aims to rank the movies on my Notion watchlist by comparing them and using the ELO formula. It's a personal and solo project."
 image:
     url: '/assets/img/movieelo-cover.png' 
     alt: 'MovieElo project mockup.'
+projectURL: 'https://movie-elo.meia.dev'
 draft: true
 ---
 

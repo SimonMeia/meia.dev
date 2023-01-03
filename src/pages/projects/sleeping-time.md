@@ -4,10 +4,11 @@ slug: "sleeping-time"
 title: "Sleeping Time"
 projectType: "Dataviz"
 technos: ["D3.js"]
-description: "Lorem ipsum dolor sit amet consectetur. Ut odio orci enim sed. Aliquet vulputate adipiscing proin curabitur pulvinar ac a scelerisque. Odio lobortis."
+description: "Sleeping Time is a school data visualization project. It aims to put in shape the different times I went to bed in the last years."
 image:
     url: '/assets/img/sleeping-cover.png' 
     alt: 'Sleeping time project mockup.'
+projectURL: 'https://sleep.meia.dev'
 draft: false
 ---
 

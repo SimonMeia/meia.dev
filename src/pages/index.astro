@@ -1,6 +1,7 @@
 ---
 import GetInTouch from "../components/GetInTouch.astro";
 import MyWork from "../components/MyWork.astro";
+import WhoAmI from "../components/WhoAmI.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
@@ -11,12 +12,13 @@ import MainLayout from "../layouts/MainLayout.astro";
         <h2 class="text-xl font-light">
             I'm a <span class="text-orange">web developer</span> based in <span class="text-orange">Switzerland</span>
         </h2>
-        <a href="#" class="w-52 mt-8 p-4 border-orange border-solid border-2 rounded text-center text-orange">
+        <a href="#my-work" class="w-52 mt-8 p-4 border-orange border-solid border-2 rounded text-center text-orange">
             Wanna see my work ?</a
         >
     </div>
     <div class="space-y-32">
-        <MyWork />
-        <GetInTouch />
+        <MyWork id="my-work" />
+        <WhoAmI id="who-am-i" />
+        <GetInTouch id="get-in-touch" />
     </div>
 </MainLayout>
