@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base{
+    /*  Erreur dans la console normal. Car le fichier output.css se trouve dans ./assets */
     @font-face{
         font-family: "Clash Display";
         font-weight: 700;
