@@ -6,32 +6,32 @@
     @font-face{
         font-family: "Clash Display";
         font-weight: 700;
-        src: url('.asstets/fonts/CLASHDISPLAY-BOLD.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-BOLD.OTF');
     }
     @font-face{
         font-family: "Clash Display";
         font-weight: 600;
-        src: url('.asstets/fonts/CLASHDISPLAY-SEMIBOLD.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-SEMIBOLD.OTF');
     }
     @font-face{
         font-family: "Clash Display";
         font-weight: 500;
-        src: url('.asstets/fonts/CLASHDISPLAY-MEDIUM.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-MEDIUM.OTF');
     }
     @font-face{
         font-family: "Clash Display";
         font-weight: 400;
-        src: url('.asstets/fonts/CLASHDISPLAY-REGULAR.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-REGULAR.OTF');
     }
     @font-face{
         font-family: "Clash Display";
         font-weight: 300;
-        src: url('.asstets/fonts/CLASHDISPLAY-LIGHT.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-LIGHT.OTF');
     }
     @font-face{
         font-family: "Clash Display";
         font-weight: 200;
-        src: url('.asstets/fonts/CLASHDISPLAY-EXTRALIGHT.OTF');
+        src: url('./assets/fonts/CLASHDISPLAY-EXTRALIGHT.OTF');
     }
 }
 
