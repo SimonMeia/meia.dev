@@ -2,21 +2,41 @@
 const { url, title, technos, projectType, description, cover, projectURL } = Astro.props;
 ---
 
-<div class="flex mb-12 justify-between h-56">
-    <div class="w-5/12 flex flex-col justify-between">
+<div class="mb-12">
+    <div class="flex flex-col md:flex-row justify-between md:h-56">
+        <div class="md:w-5/12" >
+            <div>
+                <span class="text-grey text-xs font-clashdisplay">{projectType}</span>
+                <h3 class="text-2xl text-orange font-clashdisplay">{title}</h3>
+                <div class="space-x-4 font-clashdisplay">
+                    {technos.map((techno) => <span class="text-grey text-xs">{techno}</span>)}
+                </div>
+            </div>
+            <p class="line-clamp-3 mt-2">
+                {description}
+            </p>
+        </div>
+        <img src={cover} alt={`preview of ${title} project`} class="md:w-1/2 object-contain" />
+    </div>
+    <a href={projectURL} target="_blank" class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay">
+        Learn more
+    </a>
+</div>
+<!-- <div class="flex flex-col md:flex-row mb-12 justify-between md:h-56">
+    <div class="md:w-5/12 flex flex-col justify-between">
         <div>
-            <span class="text-grey text-xs">{projectType}</span>
-            <h3 class="text-2xl text-orange">{title}</h3>
-            <div class="space-x-4">
+            <span class="text-grey text-xs font-clashdisplay">{projectType}</span>
+            <h3 class="text-2xl text-orange font-clashdisplay">{title}</h3>
+            <div class="space-x-4 font-clashdisplay">
                 {technos.map((techno) => <span class="text-grey text-xs">{techno}</span>)}
             </div>
         </div>
         <p class="line-clamp-3">
             {description}
         </p>
-        <a href={projectURL} target="_blank" class="w-fit px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2">
+        <a href={projectURL} target="_blank" class="w-fit px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay">
             Learn more
         </a>
     </div>
-    <img src={cover} alt={`preview of ${title} project`} class="w-1/2 object-contain" />
-</div>
+    <img src={cover} alt={`preview of ${title} project`} class="md:w-1/2 object-contain" />
+</div> -->

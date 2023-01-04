@@ -9,15 +9,16 @@ const { id } = Astro.props;
 ---
 
 <div id={id}>
-    <h2 class="text-4xl mb-4">Who am I ?</h2>
-    <div class="flex flex-row justify-between items-center">
-        <div class="w-1/4">
-            <img src="./assets/img/photo-simon-big.jpg" alt="Picture of Simon Meia" class="object-contain rounded" />
+    <h2 class="text-4xl mb-4 font-clashdisplay">Who am I ?</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="md:w-1/4">
+            <img src="./assets/img/photo-simon-big.jpg" alt="Picture of Simon Meia" class="hidden md:block object-contain rounded" />
+            <img src="./assets/img/photo-simon-big-mobile-2.jpg" alt="Picture of Simon Meia" class="md:hidden object-cover rounded p-5" />
         </div>
-        <div class="w-2/3 flex flex-col justify-evenly space-y-6">
+        <div class="md:w-2/3 flex flex-col justify-evenly space-y-6">
             <WhoAmIText
                 title="About Me"
-                text="My name is and I am a 22 years old media engineer specialized in web development. I live in Switzerland and I'm passionate about movies, video games and the LOTR universe."
+                text="My name is Simon Meia and I am a 22 years old media engineer specialized in web development. I live in Switzerland and I'm passionate about movies, video games and the LOTR universe."
             />
             <WhoAmIText
                 title="My Journey"

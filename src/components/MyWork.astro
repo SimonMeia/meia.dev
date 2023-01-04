@@ -8,7 +8,7 @@ const {id} = Astro.props
 ---
 
 <div id={id}>
-    <h2 class="text-4xl mb-4">My Work</h2>
+    <h2 class="text-4xl mb-4 font-clashdisplay">My Work</h2>
     {
         allProjects
             .filter((project) => projectToShow.includes(project.frontmatter.slug))
