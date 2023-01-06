@@ -16,7 +16,8 @@ module.exports = {
             },
             fontFamily: {
                 clashdisplay: ['"Clash Display"'],
-                opensans: ['Open Sans']
+                opensans: ['"Open Sans"'],
+                dmsans: ['"DM Sans"']
             },
         },
     },

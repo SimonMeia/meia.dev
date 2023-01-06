@@ -11,18 +11,22 @@ const year = new Date().getFullYear();
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
             rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <script src="https://cdn.counter.dev/script.js" data-id="d7406b1d-5772-477a-b13d-6c7b096aa8ad" data-utcoffset="1"></script>
+        <script
+            src="https://cdn.counter.dev/script.js"
+            data-id="d7406b1d-5772-477a-b13d-6c7b096aa8ad"
+            data-utcoffset="1"
+        ></script>
         <title>{title}</title>
     </head>
-    <body
-        class="font-opensans text-white bg-black container mx-auto flex flex-col h-screen justify-between px-6"
-    >
+    <body class="font-dmsans text-white bg-black container mx-auto flex flex-col h-screen justify-between px-6">
         <NavBar />
         <section class="container-main mb-auto">
             <slot />
@@ -30,8 +34,8 @@ const year = new Date().getFullYear();
         <footer class="mt-12 mb-2 flex items-center justify-between">
             <div class="space-x-2">
                 <a href="https://github.com/SimonMeia"><img src="/assets/icons/github.svg" class="w-8 inline" /></a>
-                <a href="https://www.linkedin.com/in/simon-meia/"
-                    ><img src="/assets/icons/linkedin.svg" class="w-8 inline" />
+                <a href="https://www.linkedin.com/in/simon-meia/">
+                    <img src="/assets/icons/linkedin.svg" class="w-8 inline" />
                 </a>
             </div>
             <div>
