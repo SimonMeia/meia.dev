@@ -32,8 +32,8 @@ const year = new Date().getFullYear();
         <section class="container-main mb-auto">
             <slot />
         </section>
-        <footer class="mt-12 mb-2 flex items-center justify-between">
-            <div class="space-x-2">
+        <footer class="mt-16 pb-4 flex-col md:flex-row flex items-center justify-between">
+            <div class="space-x-4">
                 <a href="https://github.com/SimonMeia" aria-label="Link to Github profile">
                     <img src="/assets/icons/github.svg" class="w-8 inline" alt="Linkedin icon" />
                 </a>
@@ -44,7 +44,7 @@ const year = new Date().getFullYear();
                     <img src="/assets/icons/behance.svg" class="w-8 inline" alt="Behance icon" />
                 </a>
             </div>
-            <div>
+            <div class="text-center">
                 Designed & Built by Simon Meia in {year}
             </div>
         </footer>
