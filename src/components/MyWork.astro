@@ -4,10 +4,10 @@ import ProjectPreview from "./ProjectPreview.astro";
 const allProjects = await Astro.glob("../pages/projects/*.md");
 const projectToShow = ["packige", "movie-elo", "sleeping-time"];
 
-const {id} = Astro.props
+const {id, cl} = Astro.props
 ---
 
-<div id={id}>
+<div id={id} class={cl}>
     <h2 class="text-4xl mb-4 font-clashdisplay">My Work</h2>
     {
         allProjects
@@ -21,6 +21,7 @@ const {id} = Astro.props
                     projectType={project.frontmatter.projectType}
                     cover={project.frontmatter.image.url}
                     projectURL={project.frontmatter.projectURL}
+                    repoURL={project.frontmatter.repoURL}
                 />
             ))
     }

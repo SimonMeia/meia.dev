@@ -1,10 +1,10 @@
 ---
-const { url, title, technos, projectType, description, cover, projectURL } = Astro.props;
+const { url, title, technos, projectType, description, cover, projectURL, repoURL } = Astro.props;
 ---
 
 <div class="mb-12">
     <div class="flex flex-col md:flex-row justify-between md:h-56">
-        <div class="md:w-5/12" >
+        <div class="md:w-5/12">
             <div>
                 <span class="text-grey text-xs font-clashdisplay">{projectType}</span>
                 <h3 class="text-2xl text-orange font-clashdisplay">{title}</h3>
@@ -18,7 +18,18 @@ const { url, title, technos, projectType, description, cover, projectURL } = Ast
         </div>
         <img src={cover} alt={`preview of ${title} project`} class="md:w-1/2 object-contain" />
     </div>
-    <a href={projectURL} target="_blank" class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay">
-        Learn more
+    <a
+        href={projectURL}
+        target="_blank"
+        class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay"
+    >
+        Go to project
+    </a>
+    <a
+        href={repoURL}
+        target="_blank"
+        class="ml-4 px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay"
+    >
+        Github repository
     </a>
 </div>

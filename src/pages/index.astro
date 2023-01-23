@@ -1,5 +1,6 @@
 ---
 import GetInTouch from "../components/GetInTouch.astro";
+import MyOtherSkills from "../components/MyOtherSkills.astro";
 import MyWork from "../components/MyWork.astro";
 import WhoAmI from "../components/WhoAmI.astro";
 import MainLayout from "../layouts/MainLayout.astro";
@@ -12,13 +13,30 @@ import MainLayout from "../layouts/MainLayout.astro";
         <h2 class="text-xl font-light font-clashdisplay">
             I'm a <span class="text-orange">web developer</span> based in <span class="text-orange">Switzerland</span>
         </h2>
-        <a href="#my-work" class="w-52 mt-8 p-4 font-clashdisplay border-orange border-solid border-2 rounded text-center text-orange">
+        <a
+            href="#my-work"
+            class="w-52 mt-8 p-4 font-clashdisplay border-orange border-solid border-2 rounded text-center text-orange"
+        >
             Wanna see my work ?</a
         >
     </div>
     <div class="space-y-32">
-        <MyWork id="my-work" />
-        <WhoAmI id="who-am-i" />
-        <GetInTouch id="get-in-touch" />
+        <WhoAmI id="who-am-i" cl="reveal" />
+        <MyWork id="my-work" cl="reveal" />
+        <MyOtherSkills id="my-other-skills" cl="reveal" />
+        <GetInTouch id="get-in-touch" cl="reveal" />
     </div>
 </MainLayout>
+<!-- 
+<script>
+    import ScrollReveal from "scrollreveal";
+    // ScrollReveal().reveal(".reveal");
+    ScrollReveal().reveal(".reveal", {
+        reset: false,
+        // distance: "0rem",
+        distance: "5rem",
+        delay: 200,
+        easing: "ease-out",
+        // duration: 1000,
+    });
+</script> -->

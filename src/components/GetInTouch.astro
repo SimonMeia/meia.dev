@@ -4,10 +4,10 @@ import ProjectPreview from "./ProjectPreview.astro";
 const allProjects = await Astro.glob("../pages/projects/*.md");
 const projectToShow = ["packige", "movie-elo", "sleeping-time"];
 
-const {id} = Astro.props
+const {id, cl} = Astro.props
 ---
 
-<div id={id}>
+<div id={id} class={cl}>
     <h2 class="text-4xl mb-4 font-clashdisplay">Get in touch ! </h2>
     <h3 class="text-2xl text-orange font-clashdisplay">Let's work together</h3>
     <p class="mb-12">

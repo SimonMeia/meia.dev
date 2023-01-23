@@ -9,6 +9,7 @@ image:
     url: '/assets/img/movieelo-cover.png' 
     alt: 'MovieElo project mockup.'
 projectURL: 'https://movie-elo.meia.dev'
+repoURL: 'https://github.com/SimonMeia/MovieElo'
 draft: true
 ---
 

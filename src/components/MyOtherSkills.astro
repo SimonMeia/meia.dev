@@ -1,0 +1,49 @@
+---
+import Text from "./Text.astro";
+
+const { id, cl } = Astro.props;
+---
+
+<div id={id} class={cl}>
+    <h2 class="text-4xl mb-4 font-clashdisplay">My other skills</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="md:w-1/4">
+            <img
+                src="./assets/img/bouteille-brasserie-jean-martin-small.png"
+                alt="Photo d'une bouteille de bière de la brasserie Jean Martin"
+                class="hidden md:block object-contain rounded"
+            />
+            <img
+                src="./assets/img/bouteilles-brasserie-jean-martin.png"
+                alt="Picture of Simon Meia"
+                class="md:hidden object-cover rounded p-5"
+            />
+        </div>
+        <div class="md:w-2/3 flex flex-col justify-evenly space-y-8">
+            <div>
+                <Text
+                    title="Graphic Design"
+                    text="During my studies I had the chance to work on graphic design projets such as a micro-brewery's brand identity, social medias content, flyers design or poster design. With all these projects I trained"
+                />
+                <a
+                    href="/graphic-design"
+                    class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange font-clashdisplay w-fit block mt-4"
+                >
+                    Learn more
+                </a>
+            </div>
+            <div>
+                <Text
+                    title="Photography"
+                    text="These past years I started taking pictures during events and it is a hobby that I continue to do as often as I can. "
+                />
+                <a
+                    href="/photography"
+                    class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange font-clashdisplay w-fit block mt-4"
+                >
+                    Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

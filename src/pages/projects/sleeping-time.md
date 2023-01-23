@@ -9,6 +9,7 @@ image:
     url: '/assets/img/sleeping-cover.png' 
     alt: 'Sleeping time project mockup.'
 projectURL: 'https://sleep.meia.dev'
+repoURL: 'https://github.com/SimonMeia/visualdon-projet'
 draft: false
 ---
 

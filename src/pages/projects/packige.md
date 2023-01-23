@@ -9,6 +9,7 @@ image:
     url: '/assets/img/packige-cover.png'     
     alt: 'Packige project mockup.'
 projectURL: 'https://fromneibaf-pingouin.heig-vd.ch/'
+repoURL: 'https://github.com/SylvainSalgatHEIG/ProjArt-fromneibaf'
 
 draft: false
 ---
