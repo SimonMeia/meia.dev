@@ -15,6 +15,6 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "astro": "^1.8.0",
     "scrollreveal": "^4.0.9",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.6"
   }
 }
