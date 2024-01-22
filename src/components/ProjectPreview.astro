@@ -18,18 +18,20 @@ const { url, title, technos, projectType, description, cover, projectURL, repoUR
         </div>
         <img src={cover} alt={`preview of ${title} project`} class="md:w-1/2 object-contain" />
     </div>
-    <a
-        href={projectURL}
-        target="_blank"
-        class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay"
-    >
-        Go to project
-    </a>
-    <a
-        href={repoURL}
-        target="_blank"
-        class="ml-4 px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay"
-    >
-        Github repository
-    </a>
+    <div class="flex flex-col md:flex-row md:space-x-2">
+        <a
+            href={projectURL}
+            target="_blank"
+            class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay block md:inline-block md:w-fit transition ease-in-out hover:text-black hover:bg-orange"
+        >
+            Go to project
+        </a>
+        <a
+            href={repoURL}
+            target="_blank"
+            class="px-3 py-1 border-orange border-solid border-2 rounded text-center text-orange mt-2 font-clashdisplay block md:inline-block md:w-fit transition ease-in-out hover:text-black hover:bg-orange"
+        >
+            Github repository
+        </a>
+    </div>
 </div>
