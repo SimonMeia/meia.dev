@@ -4,9 +4,11 @@ import MyOtherSkills from "../components/MyOtherSkills.astro";
 import MyWork from "../components/MyWork.astro";
 import WhoAmI from "../components/WhoAmI.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+
+const title = "Simon Meia - Swiss web developer";
 ---
 
-<MainLayout title="Home">
+<MainLayout title={title}>
     <div class="h-[90vh] flex flex-col justify-center">
         <span class="font-clashdisplay">Hi, my name is</span>
         <h1 class="text-orange text-8xl font-medium py-4 font-clashdisplay">Simon Meia</h1>
